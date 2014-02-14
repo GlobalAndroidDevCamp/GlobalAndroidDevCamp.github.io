@@ -3,12 +3,13 @@
 /* Controllers */
 
 angular.module('gadc.controllers', []).
-  controller('CitiesCtrl', ['$scope', function($scope) {
-		$scope.cities = [
-			{'code':'berlin','name':'Berlin'},
-			{'code':'brussels', 'name':'Brussels'}
-		]
+  controller('CitiesCtrl', ['$scope', '$http', function($scope) {
+  	$scope.cities = [{code:'berlin', name:'Berlin'},{code:'brussels', name:'Brussels'}];
 	}]).
-  controller('CityCtrl', ['$scope', '$routeParams',function($scope, $routeParams){
+  controller('CityCtrl', ['$scope', '$routeParams', '$http', 
+  function($scope, $routeParams, $http){
   		$scope.city = $routeParams.city;
+  		$http.get('city/' + $routeParams.city + '/data.json').success(function(data) {
+      $scope.cityData = data;
+    });
   	}]);
