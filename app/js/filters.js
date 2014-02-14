@@ -13,5 +13,6 @@ angular.module('gadc.filters', []).
         if (localizedTexts.hasOwnProperty(text)) {
             return localizedTexts[text];
         }
+     };
   }]);
     

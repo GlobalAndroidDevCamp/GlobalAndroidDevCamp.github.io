@@ -39,6 +39,7 @@
       'js/app.js',
       'js/services.js',
       'js/controllers.js',
+      'js/i18n/de.js',
       'js/filters.js',
       'js/directives.js'
     ], function() {
@@ -53,9 +54,9 @@
 </head>
 <body ng-cloak>
   <ul class="menu" ng-controller="CitiesCtrl">
-    <li><a href="#/home">Home</a></li>
+    <li><a href="#/home">{{Home|i18n}}</a></li>
     <li ng-repeat="city in cities"><a href="#/city/{{city.code}}">{{city.name}}</a></li>
-    <li><a href="#/faq">FAQ</a></li>		
+    <li><a href="#/faq">{{FAQ|i18n}}</a></li>		
   </ul>
   <div ng-view></div>
    
