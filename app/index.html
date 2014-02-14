@@ -7,9 +7,9 @@
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/pygment_trac.css">
 </head>
-<body>
+<body ng-controller="Cities">
   <ul class="menu">
-    <li><a href="#/berlin">Berlin</a></li>    
+    <li ng-repeat="city in cities"><a href="#/{{city.code}}"> {{city.name}}</a></li>    
   </ul>
 
   <div ng-view></div>

@@ -11,5 +11,6 @@ angular.module('gadc', [
 ]).
 config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/berlin', {templateUrl: 'partials/city.html', controller: 'City'});
-  $routeProvider.otherwise({redirectTo: '/faq'});
+  $routeProvider.when('/home', {templateUrl: 'partials/home.html', controller: 'City'});
+  $routeProvider.otherwise({redirectTo: '/home'});
 }]);

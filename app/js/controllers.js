@@ -3,6 +3,10 @@
 /* Controllers */
 
 angular.module('gadc.controllers', []).
-  controller('City', [function() {
-
+  controller('Cities', [function($scope) {
+		$scope.cities = [
+			{'code':'berlin','name':'Berlin'},
+			{'code':'brussels', 'name':'Brussels'}
+		];
+		
   }]);
