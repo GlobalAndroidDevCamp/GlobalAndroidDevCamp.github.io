@@ -10,8 +10,8 @@ angular.module('gadc', [
   'gadc.controllers'
 ]).
 config(['$routeProvider', function($routeProvider) {
-  $routeProvider.when('/berlin', {templateUrl: 'partials/city.html', controller: 'Cities'});
-  $routeProvider.when('/home', {templateUrl: 'partials/home.html', controller: 'Cities'});
-  $routeProvider.when('/faq', {templateUrl: 'partials/faq.html', controller: 'Cities'});
+  $routeProvider.when('/city/:city', {templateUrl: 'partials/city.html', controller: 'CityCtrl'});
+  $routeProvider.when('/home', {templateUrl: 'partials/home.html', controller: 'CitiesCtrl'});
+  $routeProvider.when('/faq', {templateUrl: 'partials/faq.html', controller: 'CitiesCtrl'});
   $routeProvider.otherwise({redirectTo: '/home'});
 }]);
