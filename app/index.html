@@ -35,6 +35,8 @@
       'lib/angular/angular.js',
       'lib/angular/angular-route.js',
       'lib/angular/angular-resource.js',
+      'lib/angular-translate/angular-translate.js',
+      'lib/angular-translate/angular-translate-loader-static-files.js',
       'lib/scale.fix.js',
       'js/app.js',
       'js/services.js',
@@ -52,11 +54,15 @@
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/pygment_trac.css">
 </head>
-<body ng-cloak>
+<body ng-cloak ng-controller="Ctrl">
   <ul class="menu" ng-controller="CitiesCtrl">
-    <li><a href="#/home">{{Home|i18n}}</a></li>
+    <li><a href="#/home" translate>home</a></li>
     <li ng-repeat="city in cities"><a href="#/city/{{city.code}}">{{city.name}}</a></li>
-    <li><a href="#/faq">{{FAQ|i18n}}</a></li>		
+    <li><a href="#/faq" translate>faq</a></li>		
+  </ul>
+  <ul >
+    <button ng-click="changeLanguage('de')" >Deutsch</button>
+    <button ng-click="changeLanguage('en')" >English</button>	
   </ul>
   <div ng-view></div>
    

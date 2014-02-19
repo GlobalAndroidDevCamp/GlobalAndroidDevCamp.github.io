@@ -12,4 +12,10 @@ angular.module('gadc.controllers', []).
   		$http.get('city/' + $routeParams.city + '/data.json').success(function(data) {
       $scope.cityData = data;
     });
-  	}]);
+  	}]).
+  controller('Ctrl', ['$scope','$translate'
+  function($scope, $translate){
+  	$scope.changeLanguage = function (langKey) {
+    $translate.use(langKey);
+  	};
+  }]);
