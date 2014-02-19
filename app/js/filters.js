@@ -8,3 +8,4 @@ angular.module('gadc.filters', []).
       return String(text).replace(/\%VERSION\%/mg, version);
     }
   }]);
+    
