@@ -15,7 +15,15 @@ angular.module('gadc.controllers', []).
   	}]).
   controller('Ctrl', ['$scope','$translate',
   function($scope, $translate){
+  	
   	$scope.changeLanguage = function (langKey) {
     $translate.use(langKey);
-  	};
+  	};  
+  	   
+  	
+  	$scope.availableLanguages = [
+  		{key:"en", name:"English"},
+  		{key:"de", name:"Deutsch"},
+  	];
+  	
   }]);
