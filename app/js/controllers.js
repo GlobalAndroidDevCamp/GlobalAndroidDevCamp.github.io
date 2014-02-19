@@ -13,7 +13,7 @@ angular.module('gadc.controllers', []).
       $scope.cityData = data;
     });
   	}]).
-  controller('Ctrl', ['$scope','$translate'
+  controller('Ctrl', ['$scope','$translate',
   function($scope, $translate){
   	$scope.changeLanguage = function (langKey) {
     $translate.use(langKey);
