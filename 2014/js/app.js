@@ -21,6 +21,5 @@ config(['$translateProvider', function ($translateProvider) {
     prefix: 'data/locale-',
     suffix: '.json'
   });    
-  $translateProvider.useLocalStorage();
   $translateProvider.preferredLanguage('en');
 }]);
