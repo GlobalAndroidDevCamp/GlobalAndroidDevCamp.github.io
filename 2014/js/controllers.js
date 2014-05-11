@@ -5,6 +5,10 @@
 angular.module('gadc.controllers', []).
   controller('CitiesCtrl', ['$scope', '$http', function($scope) {
   	$scope.cities = [{code:'berlin', name:'Berlin'},{code:'brussels', name:'Brussels'}, {code:'duesseldorf', name:'Düsseldorf'}];
+	$http.get('city/all.json').success(function(data) {
+      		$scope.cities = data;
+    		});
+  	}]
 	}]).
   controller('CityCtrl', ['$scope', '$routeParams', '$http', 
   function($scope, $routeParams, $http){
