@@ -9,7 +9,7 @@ angular.module('gadc.controllers', []).
       		$scope.cities = data;
     		});
   	}]
-	}]).
+	).
   controller('CityCtrl', ['$scope', '$routeParams', '$http', 
   function($scope, $routeParams, $http){
   		$scope.city = $routeParams.city;
