@@ -1,6 +1,7 @@
 [
 	{code:berlin,name:"Berlin"},
-	{code:brussels,name:"Brussels"}
-	{code:duesseldorf,name:"Düsseldorf"}
+	{code:brussels,name:"Brussels"},
+	{code:duesseldorf,name:"Düsseldorf"},
+	{code:warshaw, name: "Warshaw"}
 ]
 	
