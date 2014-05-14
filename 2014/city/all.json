@@ -2,7 +2,7 @@
 	{"code":"berlin","name":"Berlin"},
 	{"code":"brussels","name":"Brussels"},
 	{"code":"duesseldorf","name":"Düsseldorf"},
-	{"code":"krakow", name:"Krakow"},
+	{"code":"krakow", "name": "Kraków"},
 	{"code":"warsaw", "name": "Warsaw"}
 ]
 	
