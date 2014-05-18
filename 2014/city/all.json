@@ -3,6 +3,7 @@
 	{"code":"brussels","name":"Brussels"},
 	{"code":"duesseldorf","name":"Düsseldorf"},
 	{"code":"krakow", "name": "Kraków"},
+	{"code":"lviv", "name":"Lviv"},
 	{"code":"london", "name":"London"},
 	{"code":"warsaw", "name": "Warsaw"},
 	{"code":"yerevan", "name": "Yerevan"}
