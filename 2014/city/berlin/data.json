@@ -2,5 +2,6 @@
   "city": "Berlin", 
   "start":"Saturday", 
   "end":"Sunday",
-  "description":"Cool event"
+  "description":"Cool event",
+  "link":"https://plus.google.com/events/cb9g72bhpd89nrmksjrn9a5msok"
 }
