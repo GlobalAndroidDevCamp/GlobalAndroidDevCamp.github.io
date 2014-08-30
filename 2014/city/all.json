@@ -7,6 +7,7 @@
 	{"code":"lviv", "name":"Lviv"},
 	{"code":"london", "name":"London"},
 	{"code":"matsumoto", "name":"Shinshu"},
+        {"code":"rome", "name":"Rome"},
 	{"code":"warsaw", "name": "Warsaw"},
 	{"code":"yerevan", "name": "Yerevan"}
 ]
