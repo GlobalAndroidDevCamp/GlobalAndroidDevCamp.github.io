@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en" ng-app="gadc">
+<head>
+  <meta charset="utf-8">
+  <style>
+    [ng-cloak] {
+      display: none;
+    }
+  </style>
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+  <script src="lib/angular/angular.js"></script>
+  <script src="lib/angular/angular-route.js"></script>
+  <script src="lib/angular/angular-resource.js"></script>
+  <script src="lib/angular-translate/angular-translate.js"></script>
+  <script src="lib/angular-translate/angular-translate-loader-static-files.min.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/services.js"></script>
+  <script src="js/controllers.js"></script>
+  <script src="js/filters.js"></script>
+  <script src="js/directives.js"></script>
+  
+  <title>Global Android Dev Camp 2015</title>
+  <link rel="stylesheet" href="css/app.css"/>
+  <link rel="stylesheet" href="css/styles.css"/>
+  <link rel="stylesheet" href="css/pygment_trac.css"/>
+  <link rel="icon" href="favicon.ico"/>
+</head>
+<body ng-cloak ng-controller="Ctrl">
+  <ul class="menu" ng-controller="CitiesCtrl">
+    <li><a href="#/home" translate>home</a></li>
+    <li ng-repeat="city in cities"><a href="#/city/{{city.code}}">{{city.name}}</a></li>
+    <li><a href="#/faq" translate>faq</a></li>		
+  </ul>
+  <select class="menu-lang" 
+          data-ng-model="currentLanguage"
+          data-ng-options="language.key as language.name for language in availableLanguages"
+          ng-change="changeLanguage(currentLanguage)">                
+  </select>
+   
+  <div ng-view></div>
+   
+
+   <footer>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a>&mdash; GADC app: v<span app-version></span></small></p>
+   </footer>
+  <script src="lib/scale.fix.js"></script>
+
+</body>
+</html>
