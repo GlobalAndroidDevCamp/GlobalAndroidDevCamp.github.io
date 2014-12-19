@@ -4,7 +4,7 @@
 
 angular.module('gadc.controllers', []).
   controller('CitiesCtrl', ['$scope', '$http', function($scope, $http) {
-  	$scope.cities = [{code:'berlin', name:'Berlin'},{code:'brussels', name:'Brussels'}, {code:'duesseldorf', name:'Düsseldorf'}];
+  	$scope.cities = [{code:'berlin', name:'Berlin'},{code:'brussels', name:'Brussels'}];
 	$http.get('city/all.json').success(function(data) {
       		$scope.cities = data;
     		});
